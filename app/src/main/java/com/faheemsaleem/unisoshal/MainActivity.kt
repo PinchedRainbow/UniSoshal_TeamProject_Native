@@ -25,13 +25,13 @@ class MainActivity : AppCompatActivity() {
         peopleImage.translationY = 200f
         welcomeText.translationY = 200f
         descText.translationY = 200f
-        getStartedButton.translationY = 20f
+        getStartedButton.translationY = 200f
 
         // animate all of the views to alpha 1 and slide up
         peopleImage.animate().alpha(1f).translationYBy(-200f).setDuration(2000).setInterpolator(android.view.animation.OvershootInterpolator(0.2f)).startDelay = 500
         welcomeText.animate().alpha(1f).translationYBy(-200f).setDuration(2000).setInterpolator(android.view.animation.OvershootInterpolator(0.2f)).startDelay = 1000
         descText.animate().alpha(1f).translationYBy(-200f).setDuration(2000).setInterpolator(android.view.animation.OvershootInterpolator(0.2f)).startDelay = 1300
-        getStartedButton.animate().alpha(1f).translationYBy(-20f).setDuration(2000).setInterpolator(android.view.animation.OvershootInterpolator(0.2f)).startDelay = 1500
+        getStartedButton.animate().alpha(1f).translationYBy(-200f).setDuration(2000).setInterpolator(android.view.animation.OvershootInterpolator(0.2f)).startDelay = 1500
 
         // give the button an onClickListener
         getStartedButton.setOnClickListener {
