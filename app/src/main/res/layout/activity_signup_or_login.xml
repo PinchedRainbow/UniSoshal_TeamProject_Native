@@ -22,6 +22,7 @@
         android:id="@+id/imageView3"
         android:layout_width="150dp"
         android:layout_height="150dp"
+        android:transitionName="logo"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
         android:scaleType="fitCenter"
@@ -53,4 +54,66 @@
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="@+id/textView3"
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/EmailInput"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="32dp"
+        android:hint="Email"
+        android:textColorHint="@color/NotificationColor"
+        app:boxBackgroundColor="#EAEAEA"
+        app:errorEnabled="true"
+        app:expandedHintEnabled="true"
+        app:helperText="Enter your Uni email"
+        app:helperTextEnabled="true"
+        app:hintAnimationEnabled="true"
+        app:layout_constraintEnd_toEndOf="@+id/textView4"
+        app:layout_constraintStart_toStartOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/textView4">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/PasswordInput"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:hint="Password"
+        android:textColorHint="@color/NotificationColor"
+        app:boxBackgroundColor="#EAEAEA"
+        app:boxBackgroundMode="filled"
+        app:boxStrokeColor="@color/PrimaryUniSoshal"
+        app:layout_constraintEnd_toEndOf="@+id/EmailInput"
+        app:layout_constraintStart_toStartOf="@+id/EmailInput"
+        app:layout_constraintTop_toBottomOf="@+id/EmailInput"
+        app:passwordToggleEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/NotificationColor"
+        android:paddingStart="32dp"
+        android:paddingEnd="32dp"
+        android:text="Login"
+        android:textSize="24sp"
+        app:cornerRadius="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/PasswordInput" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
