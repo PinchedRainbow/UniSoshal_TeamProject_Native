@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.Toast
+import androidx.core.app.ActivityOptionsCompat
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class SignupOrLoginActivity : AppCompatActivity() {
@@ -32,7 +33,16 @@ class SignupOrLoginActivity : AppCompatActivity() {
                 if (emailIsValid && passwordIsValid)
                  {
                       // start the LoginActivity
-                      startActivity(Intent(this, BottomNavBarActivity::class.java))
+                    val intent = Intent(this, BottomNavBarActivity::class.java)
+                    intent.putExtra("email", email)
+                    intent.putExtra("password", password)
+                     val options = ActivityOptionsCompat.makeSceneTransitionAnimation(
+                         this,
+                         findViewById(R.id.imageView3),
+                         "logo"
+                     )
+                      startActivity(intent, options.toBundle())
+                     overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
                  }
 
             }

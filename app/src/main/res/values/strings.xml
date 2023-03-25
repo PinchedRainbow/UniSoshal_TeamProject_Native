@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">UniSoshal_TeamProject</string>
+    <string name="app_name">UniSoshal</string>
     <string name="title_activity_bottom_nav_bar">BottomNavBarActivity</string>
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>

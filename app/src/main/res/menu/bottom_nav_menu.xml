@@ -2,17 +2,17 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/navigation_home"
-        android:icon="@drawable/radar"
+        android:id="@+id/navigation_proximity"
+        android:icon="@drawable/location"
         android:title="Proximity" />
 
     <item
-        android:id="@+id/navigation_dashboard"
+        android:id="@+id/navigation_chats"
         android:icon="@drawable/chat"
         android:title="Chats" />
 
     <item
-        android:id="@+id/navigation_notifications"
+        android:id="@+id/navigation_profile"
         android:icon="@drawable/user"
         android:title="Profile" />
 

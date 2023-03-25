@@ -42,8 +42,7 @@ class SplashActivity : AppCompatActivity() {
         val activityName = "SplashActivity"
         intent.putExtra("activityName", activityName)
         startActivity(intent, options.toBundle())
-        overridePendingTransition(com.google.android.material.R.anim.abc_shrink_fade_out_from_bottom,
-            com.google.android.material.R.anim.abc_grow_fade_in_from_bottom);
+        overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
         finish()
     }
 }
